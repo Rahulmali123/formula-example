@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/formulaAnnotationUsed?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Rahul2140@
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+server:
+  port: 9191
